@@ -8,3 +8,7 @@ D435i to build an autonomous quadruped robot.
 - [Intel Realsense D435i Depth Camera - IMU Pitch & Roll Demo](https://www.youtube.com/watch?v=qOyn-O5LZNQ)
 
 - [Intel Realsense D435i Depth Camera - Mapping & Localization Demo](https://www.youtube.com/watch?v=0L_K3DQey9I)
+
+- [Autonomous Quadruped Robot Demo](https://www.youtube.com/watch?v=NFO0sFC34yE)
+
+
