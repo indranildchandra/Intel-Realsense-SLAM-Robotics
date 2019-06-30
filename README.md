@@ -1,6 +1,5 @@
 # Intel-Realsense-SLAM-Robotics
-Intel-Realsense-SLAM-Robotics is a repository for logging all RnD work being done by me and Soceity of Robotics and Automation (SRA) - VJTI to explore SLAM robotics on Intel Realsense cameras. Currently our research is focused on leveraging Intel Realsense Depth Camera 
-D435i to build an autonomous quadruped robot. 
+Intel-Realsense-SLAM-Robotics is a repository for logging all RnD work being done by me and Society of Robotics and Automation (SRA) - VJTI to explore SLAM robotics on Intel Realsense cameras. Currently our research is focused on leveraging Intel Realsense Depth Camera D435i to build an autonomous quadruped robot. 
 
 ## Demo Videos:
 - [Intel Realsense D435i Depth Camera - Basic Mapping Demo](https://www.youtube.com/watch?v=KcBZrFVRxlI)
