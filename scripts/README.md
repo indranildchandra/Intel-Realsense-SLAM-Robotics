@@ -24,7 +24,7 @@ Next, open a new terminal and run the next command:
 ```bash
 roslaunch rtabmap_ros rtabmap.launch rtabmapviz:=false rviz:=true rtabmap_args:="--delete_db_on_start"
 ```
-The rtabmap_ros package will subscribe to the some specified topics (in the [rtapmap.launch](https://github.com/indranildchandra/Intel-Realsense-SLAM-Robotics/blob/dev/src/rtabmap_ros/launch/rtabmap.launch)), and start mapping on RViz in realtime. Move the Realsense camera throughout the room you want to map
+The rtabmap_ros package will subscribe to the some specified topics (in the [rtabmap.launch](https://github.com/indranildchandra/Intel-Realsense-SLAM-Robotics/blob/dev/src/rtabmap_ros/launch/rtabmap.launch)), and start mapping on RViz in realtime. Move the Realsense camera throughout the room you want to map
 
 ```bash
 roslaunch rtabmap_ros rtabmap.launch localization:=true
