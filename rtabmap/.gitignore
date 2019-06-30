@@ -1,0 +1,10 @@
+/lib
+.DS_Store
+.settings/language.settings.xml
+.idea/
+.vscode
+cmake-build-debug/
+app/android/.classpath
+app/android/.project
+app/android/AndroidManifest.xml
+app/android/res/raw/
