@@ -24,4 +24,9 @@ Next, open a new terminal and run the next command:
 ```bash
 roslaunch rtabmap_ros rtabmap.launch rtabmapviz:=false rviz:=true rtabmap_args:="--delete_db_on_start"
 ```
-The rtabmap_ros package will subscribe to the some specified topics (in the [rtapmap.launch](https://github.com/indranildchandra/Intel-Realsense-SLAM-Robotics/blob/dev/src/rtabmap_ros/launch/rtabmap.launch)), and start mapping on RViz in realtime. Then move the Realsense camera through out your room.
+The rtabmap_ros package will subscribe to the some specified topics (in the [rtapmap.launch](https://github.com/indranildchandra/Intel-Realsense-SLAM-Robotics/blob/dev/src/rtabmap_ros/launch/rtabmap.launch)), and start mapping on RViz in realtime. Move the Realsense camera throughout the room you want to map
+
+```bash
+roslaunch rtabmap_ros rtabmap.launch localization:=true
+```
+Once ,you are done with the map, save it; the above command switches the process to 'Localization mode'. If you displace the camera in space, the same movements can be visualised in the map itself, where the current position of the camera in the map is also given.
