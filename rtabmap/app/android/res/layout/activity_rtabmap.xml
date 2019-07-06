@@ -1,0 +1,144 @@
+<!--
+   Copyright (C) 2014 Google Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"/>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    
+    <ToggleButton
+        android:id="@+id/wireframe_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/light_button"
+        android:layout_alignLeft="@+id/light_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingRight="5dp"
+        android:textOff="@string/wireframe"
+        android:textOn="@string/wireframe" />
+    
+    <ToggleButton
+        android:id="@+id/light_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backface_button"
+        android:layout_alignLeft="@+id/backface_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingRight="5dp"
+        android:textOff="@string/light_off"
+        android:textOn="@string/light_on" />
+    
+    <ToggleButton
+        android:id="@+id/backface_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/camera_button"
+        android:layout_alignRight="@+id/camera_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="5dp"
+        android:paddingRight="5dp"
+        android:textOff="@string/backface_off"
+        android:textOn="@string/backface_on" />
+ 
+    <com.introlab.rtabmap.NDSpinner
+        android:id="@+id/camera_button"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/camera_button"
+        android:spinnerMode="dropdown"/>
+
+    <ToggleButton
+        android:id="@+id/pause_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+		android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:textOff="@string/pause"
+        android:textOn="@string/resume" />
+
+    <Button
+        android:id="@+id/button_shareToSketchfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pause_button"
+        android:text="@string/share_to_sketchfab" />
+
+    <Button
+        android:id="@+id/button_saveOnDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button_shareToSketchfab"
+        android:layout_below="@+id/button_shareToSketchfab"
+        android:text="@string/save_to_file" />
+
+    <Button
+        android:id="@+id/close_visualization_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/camera_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/close_visualization" />
+
+    <SeekBar
+        android:id="@+id/seekBar_ortho_cut"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:rotation="270"
+        android:layout_above="@+id/light_button"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-50dp"
+        android:progressDrawable="@drawable/custom_seekbar" />
+    
+    <SeekBar
+        android:id="@+id/seekBar_grid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/camera_button"
+        android:layout_marginLeft="35dp"
+        android:paddingBottom="10dp"
+        android:progressDrawable="@drawable/custom_seekbar" />
+
+
+
+</RelativeLayout>        
+</RelativeLayout>
